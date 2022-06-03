@@ -1,0 +1,32 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/11/Seven/Main.jack
+
+class Main {
+   
+   field String str;
+
+   constructor Main new()
+   {
+        let str = "hello";
+   }
+
+   String getStr()
+   {
+        return str;
+   }
+
+   function void main() {
+      
+      var Main m;
+      var String str;
+
+      let m = Main.new();
+      let str = m.getStr();
+
+      do Output.printString(str);
+      return;
+   }
+
+}
